@@ -4,7 +4,7 @@ Donate link: https://statenweb.com/donate
 Tags: cryptocurrency, bitcoin, litecoin, ethereum, bitcoin cash, ripple
 Requires at least: 4.0
 Tested up to: 4.9.1
-Stable tag: 0.0.3
+Stable tag: 0.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,12 +48,12 @@ For the sake of brevity, by default, the table does not output (1) the current p
 
 Showing the current price:
 ```
-add_filter( 'cryptocurrency/show_current_price', __return_true' );
+add_filter( 'cryptocurrency/show_current_price', '__return_true' );
 ```
 
 Showing the last updated:
 ```
-add_filter( 'cryptocurrency/show_last_updated', __return_true' );
+add_filter( 'cryptocurrency/show_last_updated', '__return_true' );
 ```
 
 #### API
@@ -62,6 +62,9 @@ This plugin uses the public API made available by coinmarketcap.com. It is built
 
 
 #### Release Notes
+
+- 0.0.4
+fix typo in documentation
 
 - 0.0.3
 remove title from table
