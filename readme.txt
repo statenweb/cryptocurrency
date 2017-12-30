@@ -4,7 +4,7 @@ Donate link: https://statenweb.com/donate
 Tags: cryptocurrency, bitcoin, litecoin, ethereum, bitcoin cash, ripple
 Requires at least: 4.0
 Tested up to: 4.9.1
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,14 @@ add_filter( 'cryptocurrency/show_last_updated', __return_true' );
 
 This plugin uses the public API made available by coinmarketcap.com. It is built to cache responses for 60 seconds so as to not flood the API. The plugin injects the last updated date/time as part of the response object which can be exposed via a filter (see Filters above). Please make sure to follow their API rules. See https://coinmarketcap.com/api/ for more information.
 
+
+#### Release Notes
+
+- 0.0.2
+adding translation template
+
+- 0.0.1
+initial release
 
 #### Roadmap
 Things I'd like to add in the future
