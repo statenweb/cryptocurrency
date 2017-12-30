@@ -9,7 +9,7 @@
             "email": "mat@statenweb.com"
         }
     ],
-    "require": {
+    "require-dev": {
         "htmlburger/carbon-fields": "^2.1",
         "htmlburger/carbon-field-number": "^2.0"
     },
