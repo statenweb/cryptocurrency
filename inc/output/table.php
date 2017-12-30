@@ -44,7 +44,6 @@ class Table {
 		?>
 
 		<table class="cryptocurrency">
-			<caption>Summary</caption>
 			<thead>
 			<tr>
 				<th scope="col"><?php esc_html_e( $coin_label ); ?></th>
