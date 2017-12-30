@@ -37,7 +37,7 @@ class Global_Settings {
 		);
 
 
-		Container::make( 'theme_options', __( 'Crypto Data', 'cryptocurrency' ) )
+		Container::make( 'theme_options', __( 'Cryptocurrency', 'cryptocurrency' ) )
 		         ->set_page_parent( 'options-general.php' )
 		         ->add_fields( array(
 			         Field::make( 'complex', 'crypto_items', __( 'Coin Purchases', 'cryptocurrency' ) )
