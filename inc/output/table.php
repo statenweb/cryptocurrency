@@ -24,7 +24,7 @@ class Table {
 		$purchase_handler = new Handler( $currencies );
 		$pricing          = $purchase_handler->get();
 
-		$show_current_price = apply_filters( 'cryptocurrency/show_current_price', false );
+		$show_current_price = apply_filters( 'cryptocurrency/show_current_price', true );
 		$show_last_updated  = apply_filters( 'cryptocurrency/show_last_updated', false );
 
 		$coin_label            = __( 'Coin', 'cryptocurrency' );

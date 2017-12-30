@@ -4,7 +4,7 @@ Donate link: https://statenweb.com/donate
 Tags: cryptocurrency, bitcoin, litecoin, ethereum, bitcoin cash, ripple
 Requires at least: 4.0
 Tested up to: 4.9.1
-Stable tag: 0.0.6
+Stable tag: 0.0.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,11 +44,11 @@ cryptocurrency_table();
 
 #### Filters
 
-For the sake of brevity, by default, the table does not output (1) the current price of each currency and (2) the last time the price was retrieved (see API section below), which can be enabled by adding the following:
+For the sake of brevity, by default, the table outputs (1) the current price of each currency and does NOT output the last time the price was retrieved (see API section below), both of which can be toggled by adding the following:
 
-Showing the current price:
+Hiding the current price:
 ```
-add_filter( 'cryptocurrency/show_current_price', '__return_true' );
+add_filter( 'cryptocurrency/show_current_price', '__return_false’ );
 ```
 
 Showing the last updated:
@@ -62,6 +62,10 @@ This plugin uses the public API made available by coinmarketcap.com. It is built
 
 
 #### Release Notes
+
+- 0.0.7
+adding back composer.lock
+setting current price to be displayed by default
 
 - 0.0.6
 move dependencies to dev-dependencies in composer.json
