@@ -4,7 +4,7 @@ Plugin Name: Cryptocurrency
 Description: Cryptocurrency display
 Plugin URI: https://statenweb/cryptocurrency
 Author: Mat Gargano
-Version: 0.0.9
+Version: 0.0.10
 Author URI: https://statenweb.com/
 Text Domain:       cryptocurrency
 Domain Path:       /languages

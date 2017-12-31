@@ -48,7 +48,7 @@ class Global_Settings {
 				                   ->add_options( self::choices() ),
 				              Field::make( 'text', 'quantity', __( 'Quantity Purchased', 'cryptocurrency' ) ),
 				              Field::make( 'number', 'purchased_price',
-					              __( 'Purchased Price (USD)', 'cryptocurrency' ) ),
+					              __( 'Total Spend (USD)', 'cryptocurrency' ) ),
 			              ) )
 		         ) );
 	}
