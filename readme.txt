@@ -4,7 +4,7 @@ Donate link: https://statenweb.com/donate
 Tags: cryptocurrency, bitcoin, litecoin, ethereum, bitcoin cash, ripple
 Requires at least: 4.0
 Tested up to: 4.9.1
-Stable tag: 0.0.7
+Stable tag: 0.0.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,9 @@ This plugin uses the public API made available by coinmarketcap.com. It is built
 
 #### Release Notes
 
+- 0.0.8
+fix for readme.txt
+
 - 0.0.7
 adding back composer.lock
 setting current price to be displayed by default
@@ -95,8 +98,7 @@ Things I'd like to add in the future
 
 This section describes how to install the plugin and get it working.
 
-1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/cryptocurrency` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
-1. Use the Settings->Plugin Name screen to configure the plugin
-1. (Make your instructions match the desired user flow for activating and installing your plugin. Include any steps that might be needed for explanatory purposes)
-
+1. Use the Settings->Cryptocurrency screen to add your cryptocurrency portfolio
+1. Use the shortcode or API (examples for both above) to output your portfolio data
