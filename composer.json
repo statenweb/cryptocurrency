@@ -12,10 +12,5 @@
     "require-dev": {
         "htmlburger/carbon-fields": "^2.1",
         "htmlburger/carbon-field-number": "^2.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Cryptocurrency\\": "inc/"
-        }
     }
 }

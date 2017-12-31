@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Cryptocurrency\\' => array($baseDir . '/inc'),
     'Carbon_Fields\\' => array($vendorDir . '/htmlburger/carbon-fields/core'),
     'Carbon_Field_Number\\' => array($vendorDir . '/htmlburger/carbon-field-number/core'),
 );
