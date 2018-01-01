@@ -4,7 +4,7 @@ Donate link: https://statenweb.com/donate
 Tags: cryptocurrency, bitcoin, litecoin, ethereum, bitcoin cash, ripple
 Requires at least: 4.0
 Tested up to: 4.9.1
-Stable tag: 0.0.10
+Stable tag: 0.0.11
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,8 @@ Calculate and output your cryptocurrency portfolio's performance
 == Description ==
 
 Adds an admin screen to enter in your cryptocurrency purchases and then exposes a simple to use shortcode and simple API to output your cryptocurrency portfolio's performance on the frontend.
+
+Please note that this plugin makes use of a 3rd party service to retrieve cryptocurrency prices. This means that a request is made to third party servers (coinmarketcap.com) requesting current cryptocurrency prices. See https://coinmarketcap.com/api/ for more information.
 
 ## Simple usage:
 
@@ -62,6 +64,9 @@ This plugin uses the public API made available by coinmarketcap.com. It is built
 
 
 #### Release Notes
+
+- 0.0.11
+update readme to be more explicit that this plugin makes requests to a third party server.
 
 - 0.0.10
 update language on purchase spend field
