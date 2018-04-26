@@ -19,7 +19,21 @@ table.cryptocurrency tr {
 table.cryptocurrency th,
 table.cryptocurrency td {
     padding: .625em;
-    text-align: center;
+    text-align: right;
+}
+
+table.cryptocurrency th.text-left,
+table.cryptocurrency td.text-left {
+    text-align:left;
+
+}
+
+@media screen and (max-width: 600px) {
+    table.cryptocurrency th.text-left,
+    table.cryptocurrency td.text-left {
+
+        text-align: right;
+    }
 }
 table.cryptocurrency th {
 

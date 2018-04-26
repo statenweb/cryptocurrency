@@ -1,10 +1,10 @@
-=== Cryptocurrency ===
+=== Cryptocurrency Portfolio Tracker ===
 Contributors: matstars, statenweb
 Donate link: https://statenweb.com/donate
 Tags: cryptocurrency, bitcoin, litecoin, ethereum, bitcoin cash, ripple
 Requires at least: 4.0
-Tested up to: 4.9.1
-Stable tag: 0.0.11
+Tested up to: 4.9.5
+Stable tag: 0.0.15
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,29 +34,25 @@ Please note that this plugin makes use of a 3rd party service to retrieve crypto
 
 #### Shortcode
 
-```
-[cryptocurrency_table]
-```
+`[cryptocurrency_table]`
+
 
 #### PHP API
 
-```
-cryptocurrency_table();
-```
+`cryptocurrency_table();`
+
 
 #### Filters
 
 For the sake of brevity, by default, the table outputs (1) the current price of each currency and does NOT output the last time the price was retrieved (see API section below), both of which can be toggled by adding the following:
 
 Hiding the current price:
-```
-add_filter( 'cryptocurrency/show_current_price', '__return_false’ );
-```
+
+`add_filter( 'cryptocurrency/show_current_price', '__return_false’ );`
 
 Showing the last updated:
-```
-add_filter( 'cryptocurrency/show_last_updated', '__return_true' );
-```
+
+`add_filter( 'cryptocurrency/show_last_updated', '__return_true' );`
 
 #### API
 
@@ -64,6 +60,19 @@ This plugin uses the public API made available by coinmarketcap.com. It is built
 
 
 #### Release Notes
+
+
+- 0.0.15
+bugfixes, analytics data
+
+- 0.0.14
+frontend updates for the shortcode (thanks /u/ZSsDesign)
+
+- 0.0.13
+update plugin title (thanks /u/you-cant-twerk)
+
+- 0.0.12
+readme fix
 
 - 0.0.11
 update readme to be more explicit that this plugin makes requests to a third party server.

@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Cryptocurrency
-Description: Cryptocurrency display
+Plugin Name: Cryptocurrency Portfolio Tracker
+Description: Enter your cryptocurrency purchases and track their pricing in real time
 Plugin URI: https://statenweb/cryptocurrency
 Author: Mat Gargano
-Version: 0.0.11
+Version: 0.0.15
 Author URI: https://statenweb.com/
 Text Domain:       cryptocurrency
 Domain Path:       /languages
@@ -13,6 +13,38 @@ Domain Path:       /languages
 use Cryptocurrency\Actions;
 use Cryptocurrency\Settings\Global_Settings;
 use Cryptocurrency\Shortcodes\Table;
+
+function cry_fs() {
+    global $cry_fs;
+
+    if ( ! isset( $cry_fs ) ) {
+        // Include Freemius SDK.
+        require_once dirname(__FILE__) . '/freemius/start.php';
+
+        $cry_fs = fs_dynamic_init( array(
+            'id'                  => '2025',
+            'slug'                => 'cryptocurrency',
+            'type'                => 'plugin',
+            'public_key'          => 'pk_ad331077d943d10dd7ea8fd50b295',
+            'is_premium'          => false,
+            'has_addons'          => false,
+            'has_paid_plans'      => false,
+            'menu'                => array(
+                'slug'           => 'crb_carbon_fields_container_cryptocurrency.php',
+                'parent'         => array(
+                    'slug' => 'options-general.php',
+                ),
+            ),
+        ) );
+    }
+
+    return $cry_fs;
+}
+
+// Init Freemius.
+cry_fs();
+// Signal that SDK was initiated.
+do_action( 'cry_fs_loaded' );
 
 require __DIR__ . '/vendor/autoload.php';
 

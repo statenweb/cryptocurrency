@@ -46,7 +46,7 @@ class Table {
 		<table class="cryptocurrency">
 			<thead>
 			<tr>
-				<th scope="col"><?php esc_html_e( $coin_label ); ?></th>
+				<th scope="col" class="text-left"><?php esc_html_e( $coin_label ); ?></th>
 				<th scope="col"><?php esc_html_e( $quantity_label ); ?></th>
 				<th scope="col"><?php esc_html_e( $purchased_spend_label ); ?></th>
 				<?php if ( $show_current_price ) : ?>
@@ -93,7 +93,7 @@ class Table {
 
 
 				<tr>
-					<td data-label="<?php esc_attr_e( $coin_label ); ?>"><?php esc_html_e( $name ); ?></td>
+					<td class="text-left" data-label="<?php esc_attr_e( $coin_label ); ?>"><?php esc_html_e( $name ); ?></td>
 
 					<td data-label="<?php esc_attr_e( $quantity_label ); ?>">
 						<?php esc_html_e( $quantity ); ?>
